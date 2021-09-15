@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  height: 80vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 110, 120, 0.932)), to(#fc3643)), url(../img/bg-pattern-intro.svg);
+  background: linear-gradient(rgba(252, 110, 120, 0.932), #fc3643), url(../img/bg-pattern-intro.svg);
+  background-size: 140%;
+  background-position: center;
+  border-bottom-left-radius: 120px;
+  background-attachment: fixed;
+  margin-bottom: 20px;
+}
+
+header .nav__top {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .nav__links {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .nav__links li {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: .8rem;
+  font-weight: lighter;
+}
+
+header .nav__links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header #logo {
+  margin-right: 55px;
+}
+
+header #nav-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header #login {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header #login ul li {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+header #login ul li a {
+  text-decoration: none;
+  font-size: .8rem;
+  color: white;
+  padding: 10px 15px;
+}
+
+header #login ul li a:hover {
+  background: #fff;
+  color: #ff525d;
+  border-radius: 40px;
+}
+
+header .nav__links_item {
+  position: relative;
+}
+
+header .nav__links_item:hover .li_child {
+  opacity: 1;
+}
+
+header .li_child {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: start;
+  -webkit-box-shadow: 10px 5px 20px rgba(32, 32, 32, 0.342);
+          box-shadow: 10px 5px 20px rgba(32, 32, 32, 0.342);
+  z-index: 2;
+  opacity: 0;
+}
+
+header .li_child li {
+  padding: 5px 0;
+}
+
+header .li_child li:hover {
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+}
+
+header .li_child li a {
+  color: #222222;
+}
+
+header #header_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+}
+
+header #header_content h1 {
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  word-spacing: 5px;
+}
+
+header #header_content h5 {
+  font-size: .8rem;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+header #header_content a {
+  text-decoration: none;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 40px;
+  padding: 10px 10px;
+  font-size: .9rem;
+}
+
+header #header_content a:hover {
+  background: #ff525d;
+  background: #fff;
+  color: #ff525d;
+}
+
+.main-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#future-design {
+  background: green;
+  position: relative;
+}
+
+#future-design h1 {
+  text-align: center;
+}
+
+#future-design-image-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: red;
+}
+
+#future-design-image-container #future-design-text {
+  background: blue;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#future-design-image-container #future-design-img {
+  position: absolute;
+  right: -100px;
+}
+/*# sourceMappingURL=styles.css.map */
