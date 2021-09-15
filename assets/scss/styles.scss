@@ -21,7 +21,7 @@ header{
   border-bottom-left-radius: 120px;
   // background-color: hsl(356, 100%, 66%);
   background-attachment: fixed;
- margin-bottom: 20px;
+//  margin-bottom: 20px;
 
   .nav__top{
     padding:40px 0;
@@ -151,23 +151,23 @@ header{
   margin: 0 auto;
 }
 
-#future-design{
-color: hsl(207, 13%, 34%);
-  position: relative;
-  & h1{
-    text-align: center;
-  }
-}
+// #future-design{
+// color: hsl(207, 13%, 34%);
+//   position: relative;
+//   & h1{
+//     text-align: center;
+//   }
+// }
 
 #future-design{
-  height:80vh;
+  // height:80vh;
   // background: blue;
-  margin-top:100px;
-  margin-bottom:120px;
+  margin-top:10px;
+  margin-bottom:10px;
  h1{
    font-size: 2rem;
-   margin-top: 100px;
-   margin-bottom: -100px;
+  //  margin-top: 100px;
+  //  margin-bottom: -100px;
  }
  h2{
    font-size: 1.6rem;
@@ -185,23 +185,30 @@ color: hsl(207, 13%, 34%);
 
 
 #future-design-image-container{
-  position: relative;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content:center;
-  align-items: center;
+  margin-top: 20px;
+  display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: column-reverse;
+  // position: relative;
+  // display:grid;
+  // grid-template-columns: 3fr 1fr;
+  // justify-content:center;
+  // align-items: center;
  
   #future-design-text{
-    position: absolute;
-    top:150px;
-    width:50%;
     align-self: center;
+    // background-color: orange;
+    // position: absolute;
+    // top:150px;
+    // width:50%;
+    // align-self: center;
   }
 
   #future-design-img{
-    position: absolute;
-    top:30px;
-    right:-270px;
+    // background:orange;
+    // position: relative;
+    // top:30px;
+    // right:-270px;
 
     & img{
       height:500px;
@@ -211,27 +218,29 @@ color: hsl(207, 13%, 34%);
 
 
 #state_of_the_art{
-  position: relative;
-  height:60vh;
-  margin: 50px 0;
-  background-image: url(../img/bg-pattern-circles.svg);
+  // position: relative;
+  color:  hsl(240, 2%, 79%);
+  // height:20vh;
+  margin: 150px 0;
+  padding:10px;
+   background-image: url(../img/bg-pattern-circles.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: hsl(237, 17%, 21%);
-  background-size: 60%;
-  background-position:0 bottom;
-  color: #fff;
-  border-top-right-radius: 80px;
-  border-bottom-left-radius: 80px;
+  // background-size: 60%;
+  background-position:0 -150px;
+  // color: #fff;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 
 
   .state_of_the_art_container{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    display: flex;
   }
 
   #img-box{
-  margin-top: -50px;
+  margin-top: -60px;
   }
   .text-box{
     margin-top: 150px;
@@ -251,86 +260,80 @@ color: hsl(207, 13%, 34%);
   }
 }
 
-#future-design{
-  color: hsl(207, 13%, 34%);
-    position: relative;
-    & h1{
-      text-align: center;
-    }
-  }
-  
+
+
+
+
+
+
   #future-design{
-    height:80vh;
+    color: hsl(207, 13%, 34%);
+    // height:80vh;
     // background: blue;
-    margin-top:100px;
-    margin-bottom:70px;
-   h1{
+    // margin-top:100px;
+    // margin-bottom:70px;
+  }
+    #future-design h1{
+      text-align: center;
      font-size: 2rem;
      margin-top: 100px;
-     margin-bottom: -100px;
-   }
-   h2{
+    //  margin-bottom: -100px;
+    }  
+   #future-design h2{
      font-size: 1.6rem;
      margin-bottom: 20px ;
-  
    }
-   p{
+   #future-design p{
     font-family: 'Overpass', sans-serif;
      font-size:.9rem;
      margin-bottom: 45px;
      line-height: 22px;
      font-weight: 300;
    }
-  }
+  
  
+
+
+
 
   #free_open_simple{
     margin:200px 0;
   }
+
+
   .free_open_simple_container{
-    position: relative;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content:center;
     align-items: center;
     color: #4b5862;
-   
+    // background: green;
+  }
     #free_open_simple_text{
-      // position: absolute;
-      top:150px;
-      // width:50%;
       align-self: center;
     }
   
-    #free_open_img{
-      // position: absolute;
-      top:30px;
-      left:-270px;
-      margin-left: -250px;
-  
-      & img{
-        height:500px;
-      }
+    #free_open_img img{
+     height:500px;
     }
+  
 
-    h1{
+  .free_open_simple_container  h1{
       font-size: 2rem;
       margin-top: 100px;
       margin-bottom: -100px;
-    }
-    h2{
+ }
+    .free_open_simple_container  h2{
       font-size: 1.6rem;
       margin-bottom: 20px ;
-   
-    }
-    p{
+   }
+.free_open_simple_container p{
      font-family: 'Overpass', sans-serif;
       font-size:.9rem;
       margin-bottom: 45px;
       line-height: 22px;
       font-weight: 300;
     }
-  }
+  
   
 
   footer{
@@ -340,6 +343,8 @@ color: hsl(207, 13%, 34%);
     padding:30px 0;
     border-top-right-radius: 50px;
   }
+
+  
   #footer-container{
     margin-top: 30px;
     display: grid;
@@ -369,66 +374,132 @@ color: hsl(207, 13%, 34%);
   }
 
   @media screen and (max-width: 1200px) {}
+
+
+
+
   @media screen  and (max-width:760px){
-   
-
-
-    #future-design{
-      height:80vh;
-      // background: blue;
-      margin-top:100px;
-      margin-bottom:70px;
-     h1{
-      //  font-size: 2rem;
-      //  margin-top: 100px;
-      //  margin-bottom: -100px;
-     }
-     h2{
-       font-size: 1.6rem;
-       margin-bottom: 20px ;
+    .main-container{
+      padding:0 5px;
+      max-width: 90%;
+      margin: 0 auto;
+    }
     
-     }
-     p{
+
+    header #header_content{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      color:white;
       font-family: 'Overpass', sans-serif;
-       font-size:.9rem;
-       margin-bottom: 45px;
-       line-height: 22px;
-       font-weight: 300;
+      // background: blue;
+      width:100%;
+      h1{
+       
+        font-size: 2rem;
+      }
+      h5{
+        font-size: 1rem;
+        font-weight:300;
+        margin-bottom: 35px;
+      }
+      a{
+        display: inline-block;
      }
+}
+
+
+#future-design{
  
-     #future-design-image-container{
-      // position: relative;
-      display:grid;
-      grid-template-columns:1fr;
-      justify-content:center;
-      align-items: center;
-      
-     
-      #future-design-text{
-        // position: absolute;
-        // top:150px;
-        // width:50%;
-        align-self: center;
-      }
-      #future-design-img{
-        position: absolute;
-        // top:30px;
-        right:0px;
+  h1{
+    font-size:1.5rem;
+  }
+  h2{
+    font-size:1.2rem;
+  }
+#future-design-image-container{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+ #future-design-text{
+   padding:0 10px;
+   margin-bottom: 10px;
+ }
+
+  #future-design-img{
+    position: relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0; 
+    margin:20px 0;
+
+
+    img{
+      height:300px;
+    }
+  
+  }
+
+}
+  
+#future-design-img{
+  // background:orange;
+  // position: relative;
+  // top:30px;
+  // right:-270px;
+
+  & img{
+    height:500px;
+  }
+}
+
+    #state_of_the_art{
     
-        & img{
-          height:400px;
+      background-repeat: no-repeat;
+      background-color: hsl(237, 17%, 21%);
+      background-size: 70%;
+      background-position:50% -120%;
+      // color: #fff;
+      border-top-right-radius: 80px;
+      border-bottom-left-radius: 80px;
+      // margin:50px 0;
+    
+    
+      .state_of_the_art_container{
+        // background: #000;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+      //  background:blue;
+      }
+    
+      #img-box img{
+      height:300px;
+      }
+      .text-box{
+        // color: red;
+        // background: red;
+        margin-top: -2px;
+    
+        h1{
+          font-size: 1.7rem;
+          // margin-top: 100px;
+          margin-bottom: 20px;
         }
+        p{
+          font-family: 'Overpass', sans-serif;
+           font-size:.9rem;
+           margin-bottom: 45px;
+           line-height: 22px;
+           font-weight: 300;
+         }
       }
-     
     }
-
-
-    }
-    
-   
-    
-   
-
 
 
     //Design for the Future
@@ -438,40 +509,35 @@ color: hsl(207, 13%, 34%);
     }
     .free_open_simple_container{
       // position: relative;
-      display:grid;
-      grid-template-columns: 1fr;
+      display:flex;
+      flex-direction: column;
       justify-content:center;
       align-items: center;
       color: #4b5862;
-     
+    }
       #free_open_simple_text{
      
         align-self: center;
       }
     
       #free_open_img{
-        // position: absolute;
-        // top:30px;
-        left:10px;
-        margin-left: 10px;
-    
-        & img{
-          height:300px;
-          margin: 50px;
-        }
+      //  background: #000;
       }
+    #free_open_img img{
+      height:300px;
+    }
   
-      h1{
+    #free_open_simple  h1{
         font-size: 2rem;
         margin-top:20px;
         margin-bottom:30px;
       }
-      h2{
+      #free_open_simple   h2{
         font-size: 1.6rem;
         margin-bottom: 5px ;
      
       }
-      p{
+      #free_open_simple    p{
        font-family: 'Overpass', sans-serif;
         font-size:.9rem;
         margin-bottom: 45px;
@@ -479,9 +545,7 @@ color: hsl(207, 13%, 34%);
         font-weight: 300;
         padding:20px 50px;
       }
-    }
-
-
+ 
     #footer-container{
       margin-top: 30px;
       display: grid;
@@ -492,4 +556,5 @@ color: hsl(207, 13%, 34%);
         margin-bottom: 40px;
       }
     
-  }}
+  }
+}
